@@ -34,8 +34,14 @@
 			      $('.detail-section').show();
 			      $('.error-msg').hide();
 		      }else{
-		      	$('.error-msg').show();
-		      	$('.error-msg').text('Please enter a valid movie name');
+		      	console.log(expr);
+		      	if(expr !== ""){
+		      		$('.error-msg').show();
+		      		$('.error-msg').text('Please enter a valid movie name');	
+		      	} else{
+		      		$('.error-msg').text('This field is required');
+		      	}
+		      	
 		      	$('.detail-section').hide();
 		      }
 		      
