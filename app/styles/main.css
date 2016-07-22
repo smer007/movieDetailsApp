@@ -114,7 +114,7 @@ html {
 
   .detail-section .movie-detail {
       background-color: #333;
-      ont-weight: 200;
+      font-weight: 200;
   }
 
   .movie-detail .movie-image{
@@ -129,6 +129,9 @@ html {
 
   .glyphicon-star:before{
   font-size: 20px;
+}
+  .glyphicon-star{
+  top: 4px;
 }
 
   .hidden-mobile{
