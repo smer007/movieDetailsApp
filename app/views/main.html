@@ -2,12 +2,14 @@
     <div class="search-section row">
       <div class="col-lg-12">
         <div class="input-group">
+          
+          <input type="text" class="form-control" aria-label="type a movie" id="moviename" placeholder="Find Movies" ng-model="expr" tabindex="0">
           <span class="input-group-addon">
             <button class="btn btn-default" ng-click="mainVm.searchMovie(expr)">
               <span class="glyphicon glyphicon-search" aria-hidden="true"  tabindex="0"></span>
             </button>
           </span>
-          <input type="text" class="form-control" aria-label="..." id="moviename" placeholder="Type a movie" ng-model="expr" tabindex="0">
+          
         </div><!-- /input-group -->
       </div><!-- /.col-lg-12 -->
       <span class="error-msg"></span>

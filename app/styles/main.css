@@ -26,11 +26,14 @@ html {
 }
 
 .search-section .btn-default{
-  background: red; /* For browsers that do not support gradients */
+    background: red; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(#e6e600, #b3b300); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(#e6e600, #b3b300); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(#e6e600, #b3b300); /* For Firefox 3.6 to 15 */
     background: linear-gradient(#e6e600, #b3b300); /* Standard syntax */
+    border-radius: 0;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
 }
 
 .search-section .error-msg {
@@ -136,5 +139,8 @@ html {
   }
   .movie-detail-title {
     font-weight: 800;
+}
+  .search-section .error-msg {
+    font-size: 14px;
 }
 }
