@@ -9,9 +9,8 @@
  */
 angular.module('intuitUiiApp')
   .controller('MainCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+    var mainVm = this;
+    mainVm.searchMovie = function (expr) {
+    	console.log(expr);
+    }
   });
