@@ -27,7 +27,7 @@
 			      mainVm.runtime = mainVm.Movies.Runtime;
 			      mainVm.imdbRating = mainVm.Movies.imdbRating;
 			      mainVm.plot = mainVm.Movies.Plot;
-			      mainVm.poster = (mainVm.Movies.Poster == "N/A")? "http://ia.media-imdb.com/images/M/MV5BZGQ0ZTI0MzgtYWQ5MC00Zjc0LTgwM2YtNWNhZjc1ZGM0ZmJkXkEyXkFqcGdeQXVyNjUwMTQ4NjE@._V1_SX300.jpg" : mainVm.Movies.Poster;
+			      mainVm.poster = (mainVm.Movies.Poster == "N/A")? "https://ia.media-imdb.com/images/M/MV5BZGQ0ZTI0MzgtYWQ5MC00Zjc0LTgwM2YtNWNhZjc1ZGM0ZmJkXkEyXkFqcGdeQXVyNjUwMTQ4NjE@._V1_SX300.jpg" : mainVm.Movies.Poster;
 			      mainVm.awards = mainVm.Movies.Awards;
 			      mainVm.rated = mainVm.Movies.Rated;
 			      mainVm.director = mainVm.Movies.Director;;

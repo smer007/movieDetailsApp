@@ -14,7 +14,7 @@
 			var defer = $q.defer();
 
 			$http
-				.get('http://www.omdbapi.com/?t='+expr)
+				.get('https://www.omdbapi.com/?t='+expr)
 				.then(function (response) {
 					defer.resolve(response.data);//proimse made is successfull
 				}, function (error) {
