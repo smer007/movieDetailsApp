@@ -5,12 +5,7 @@ html {
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-left: 15px;
-  padding-right: 15px;
-}
+
 
 /* Custom page header */
 .header {
@@ -23,12 +18,23 @@ html {
   margin-top: 0;
   margin-bottom: 0;
   line-height: 40px;
-  padding-bottom: 19px;
+  color: #262673;
 }
 
 .search-section .input-group-addon{
   padding: 0;
   border: 0;
+}
+.search-section .glyphicon{
+  font-weight: bolder;
+}
+
+.search-section .btn-default{
+  background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#e6e600, #b3b300); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#e6e600, #b3b300); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#e6e600, #b3b300); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#e6e600, #b3b300); /* Standard syntax */
 }
 
 .search-section .error-msg {
@@ -60,15 +66,24 @@ html {
     background-color: #333;
 }
 
-
-/* Custom page footer */
-.footer {
-  padding-top: 19px;
-  color: #777;
-  margin-top: 5px;
-  border-top: 1px solid #e5e5e5;
+.movie-detail .movie-image{
+  margin: 0 auto;
 }
 
+.glyphicon{
+  top: 2px;
+}
+.glyphicon-star:before{
+  color: yellow;
+  margin-right: 5px;
+}
+
+.hidden-mobile{
+  display: none;
+}
+.hidden-tablet{
+   display: block; 
+  }
 
 
 /* Responsive: Portrait tablets and up */
@@ -79,13 +94,51 @@ html {
 
   /* Remove the padding we set earlier */
   .header,
-  .marketing,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
-  }
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
   /* Space out the masthead */
   .header {
     margin-bottom: 30px;
   }
+
+  .detail-section .movie-title {
+    padding: 16px;
+    font-size: 18px;
+  }
+  .detail-section .movie-title-footer{
+      font-weight: 400;
+      font-size: 14px;
+  }
+
+  .detail-section .movie-detail {
+      background-color: #333;
+      ont-weight: 200;
+  }
+
+  .movie-detail .movie-image{
+    margin: 0 0 0 auto;
+  }
+
+  .movie-detail .movie-summary{
+    color: #f2f2f2;
+    padding-left: 15px;
+    padding-top: 15px;
+  }
+
+  .glyphicon-star:before{
+  font-size: 20px;
+}
+
+  .hidden-mobile{
+    display: block;
+  }
+  .hidden-tablet{
+   display: none; 
+  }
+  .movie-detail-title {
+    font-weight: 800;
+}
 }

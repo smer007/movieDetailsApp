@@ -9,7 +9,6 @@
 		var self = this;
 
 		self.getMovie = function (expr) {
-			console.log('in service', expr);
 			// defer object is created when you want to tell the caller of the function that whenever the response comes from 
 			// this call, I promise I will return back to you.
 			var defer = $q.defer();
