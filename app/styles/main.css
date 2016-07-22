@@ -1,6 +1,7 @@
 
-body {
+html {
   padding: 0;
+  font-style: Avenir;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -25,9 +26,38 @@ body {
   padding-bottom: 19px;
 }
 
-.search-area .input-group-addon{
+.search-section .input-group-addon{
   padding: 0;
   border: 0;
+}
+
+.search-section .error-msg {
+    color: red;
+    padding: 15px;
+    font-size: 12px;
+}
+
+.detail-section .rated{
+  border: 1px solid #e6e6e6;
+  border-radius: 2px;  
+  margin-right: 5px;
+  padding: 2px;
+}
+
+.detail-section .movie-title {
+    background-color: #262673;
+    color: #e6e6e6;
+    padding: 10px;
+    border-radius: 2px;
+}
+.detail-section .movie-title-footer{
+    color: #cccccc;
+    font-weight: 200;
+    font-size: 12px;
+}
+
+.detail-section .movie-detail {
+    background-color: #333;
 }
 
 
@@ -42,7 +72,7 @@ body {
 
 
 /* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .container {
     max-width: 730px;
   }

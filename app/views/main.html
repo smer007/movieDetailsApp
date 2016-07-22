@@ -1,5 +1,5 @@
 <div ng-controller="MainCtrl as mainVm">
-  <div class="search-area row">
+  <div class="search-section row">
     <div class="col-lg-12">
       <div class="input-group">
         <span class="input-group-addon">
@@ -10,6 +10,27 @@
         <input type="text" class="form-control" aria-label="..." id="moviename" placeholder="Type a movie" ng-model="expr" tabindex="0">
       </div><!-- /input-group -->
     </div><!-- /.col-lg-12 -->
+    <span class="error-msg"></span>
     
   </div><!-- /.row -->
+
+  <div class="detail-section" ng-hide="!mainVm.response">
+
+    <div class="movie-title">
+      <p>{{mainVm.title}}</p>
+      <p class="movie-title-footer">
+        <span class="rated">{{mainVm.rated}}</span>
+        <span>{{mainVm.year}} &middot;</span>
+        <span>{{mainVm.genre}} &middot;</span>
+        <span>{{mainVm.runtime}}</span>
+      </p>
+      <p></p>
+
+    </div>
+    <div class="movie-detail">
+      <img src="{{mainVm.poster}}" class="img-responsive center-block" alt="movie image">
+    </div>
+
+  </div>
+  
 </div>
