@@ -19,7 +19,7 @@
 		      mainVm.Movies = result;
 		      mainVm.response = mainVm.Movies.Response.toLowerCase();
 
-		      if (mainVm.response == "true") {
+		      if (mainVm.response == "true" && expr!=undefined) {
 				mainVm.actors = mainVm.Movies.Actors;
 			      mainVm.title = mainVm.Movies.Title;
 			      mainVm.year = mainVm.Movies.Year;
