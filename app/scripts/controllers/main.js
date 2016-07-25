@@ -20,11 +20,11 @@
 		      mainVm.response = mainVm.Movies.Response.toLowerCase();
 
 		      if (mainVm.response == "true" && expr!=undefined) {
-				mainVm.actors = mainVm.Movies.Actors;
+				  mainVm.actors = mainVm.Movies.Actors;
 			      mainVm.title = mainVm.Movies.Title;
 			      mainVm.year = mainVm.Movies.Year;
 			      mainVm.genre = mainVm.Movies.Genre.replace(/,/g,"/");
-			      mainVm.runtime = mainVm.Movies.Runtime;
+			      mainVm.runtime = formatDuration(mainVm.Movies.Runtime); 
 			      mainVm.imdbRating = mainVm.Movies.imdbRating;
 			      mainVm.plot = mainVm.Movies.Plot;
 			      mainVm.poster = (mainVm.Movies.Poster == "N/A")? "https://ia.media-imdb.com/images/M/MV5BZGQ0ZTI0MzgtYWQ5MC00Zjc0LTgwM2YtNWNhZjc1ZGM0ZmJkXkEyXkFqcGdeQXVyNjUwMTQ4NjE@._V1_SX300.jpg" : mainVm.Movies.Poster;
@@ -34,7 +34,6 @@
 			      $('.detail-section').show();
 			      $('.error-msg').hide();
 		      }else{
-		      	console.log(expr);
 		      	if(expr !== ""){
 		      		$('.error-msg').show();
 		      		$('.error-msg').text('Please enter a valid movie name');	
@@ -49,5 +48,13 @@
 		      
 		    });
 	    	
+	    }
+
+	    function formatDuration(durationStr) {
+	    	var duration = durationStr.replace('N/A', '0');
+	    	var formattedDuration;
+	    	formattedDuration = (Math.round(parseInt(duration, 10)/60) + (parseInt(duration, 10)%60) != 0)?Math.round(parseInt(duration, 10)/60)+'hr '+parseInt(duration, 10)%60+'min' : 'Duration not available';
+
+	    	return formattedDuration;
 	    }
 	  }

@@ -60,6 +60,9 @@ html {
     font-weight: 200;
     font-size: 12px;
 }
+.movie-title-footer-duration{
+    display: inline-block;
+}
 
 .detail-section .movie-detail {
     background-color: #333;
