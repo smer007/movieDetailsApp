@@ -10,7 +10,7 @@ module.exports = function(config) {
 
     // frameworks to use
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-    framework: ['jasmine'],
+    frameworks: ['jasmine'],
 
 
     // list of files / patterns to load in the browser
@@ -58,6 +58,7 @@ module.exports = function(config) {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
+    // browsers: ['Chrome'],PhantomJS
     browsers: ['PhantomJS'],
 
 
@@ -68,6 +69,6 @@ module.exports = function(config) {
     // Concurrency level
     // how many browser should be started simultaneous
     concurrency: Infinity,
-    plugins : ['karma-jasmine', 'karma-phantomjs-launcher']
+    plugins : ['karma-jasmine', 'karma-chrome-launcher','karma-phantomjs-launcher']
   })
 }
